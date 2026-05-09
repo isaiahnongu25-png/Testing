@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfect Pace Online School</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+  <header class="page-header">
+    <div class="topbar">
+      <div class="brand"><a href="index.html">Perfect Pace</a></div>
+      <nav class="main-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="about.html">About</a>
+        <a href="resources.html">Resources</a>
+        <a class="button button-secondary" href="admin.html">Admin</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+
+    <div class="page-hero hero-large">
+      <div class="hero-copy">
+        <span class="eyebrow">Online school for modern skills</span>
+        <h1>Learn from expert instructors with a seamless online experience.</h1>
+        <p>Perfect Pace is built to help students enroll quickly, access course resources, and follow clear learning paths with professional support.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="courses.html">Explore courses</a>
+          <a class="button button-ghost" href="#enroll">Enroll now</a>
+        </div>
+      </div>
+      <div class="hero-image-block hero-image-landing">
+        <img src="images/main%20campus%20.jpg" alt="Professional online learning environment" loading="lazy">
+      </div>
+    </div>
+  </header>
+
+  <main class="page-content">
+    <section class="section-intro">
+      <div>
+        <h2>Flexible programs for students, professionals, and teams.</h2>
+        <p>Courses include video lessons, downloadable resources, and career-ready projects to support students in every stage of their journey.</p>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span>34</span>
+          <p>Courses</p>
+        </div>
+        <div class="stat-card">
+          <span>1.2k+</span>
+          <p>Students enrolled</p>
+        </div>
+        <div class="stat-card">
+          <span>115</span>
+          <p>Resources</p>
+        </div>
+        <div class="stat-card">
+          <span>24</span>
+          <p>Expert instructors</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-highlights">
+      <article class="feature-card">
+        <i class="fa-solid fa-rocket"></i>
+        <h3>Fast onboarding</h3>
+        <p>Register in minutes and start learning with a guided course recommendation.</p>
+      </article>
+      <article class="feature-card">
+        <i class="fa-solid fa-layer-group"></i>
+        <h3>Structured programs</h3>
+        <p>Learn with clear modules, lessons, and project milestones built for steady progress.</p>
+      </article>
+      <article class="feature-card">
+        <i class="fa-solid fa-headset"></i>
+        <h3>Live support</h3>
+        <p>Get answers fast through mentors, guides, and peer collaboration tools.</p>
+      </article>
+      <article class="feature-card">
+        <i class="fa-solid fa-award"></i>
+        <h3>Certification</h3>
+        <p>Earn completion certificates to share with employers and build your portfolio.</p>
+      </article>
+    </section>
+
+    <section class="section-cards" id="courses">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">Featured courses</span>
+          <h2>Top programs for growth and skill-building.</h2>
+        </div>
+        <p>Every course is designed with career-ready outcomes and modern learning materials.</p>
+      </div>
+      <div class="course-grid" id="courseList"></div>
+    </section>
+
+    <section class="section-feature feature-landing">
+      <div class="feature-copy">
+        <span class="eyebrow">Built for students</span>
+        <h2>Every learning path includes the resources you need.</h2>
+        <p>From reading guides to video workshops, our platform helps learners stay motivated and prepared for the next step.</p>
+      </div>
+      <div class="feature-panel">
+        <ul class="feature-list">
+          <li><strong>Downloadable materials</strong> ready after every lesson.</li>
+          <li><strong>Study planner</strong> to track progress and goals.</li>
+          <li><strong>Live mentorship</strong> from expert instructors.</li>
+          <li><strong>Career guidance</strong> for portfolio and interview preparation.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section-team">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">Our instructors</span>
+          <h2>Practitioners who care about learning outcomes.</h2>
+        </div>
+        <p>Each instructor brings real experience and accessible teaching to our online classroom.</p>
+      </div>
+      <div class="instructor-grid">
+        <article class="instructor-card">
+          <img src="images/solo.jpeg" alt="Instructor Amina Okafor" loading="lazy">
+          <h3>Amina Okafor</h3>
+          <p>Lead web development mentor with 10+ years of product experience.</p>
+        </article>
+        <article class="instructor-card">
+          <img src="images/images.jpeg" alt="Instructor Samuel Wiggles" loading="lazy">
+          <h3>Samuel Wiggles</h3>
+          <p>Data science trainer focused on analytics, machine learning, and storytelling.</p>
+        </article>
+        <article class="instructor-card">
+          <img src="images/pic1.jpg" alt="Instructor Nia Karanja" loading="lazy">
+          <h3>Nia Karanja</h3>
+          <p>Marketing strategist teaching audience growth and campaign execution.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-testimonials" id="testimonials">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">Student trust</span>
+          <h2>Hear from learners who finished their programs.</h2>
+        </div>
+        <p>Feedback from students who appreciated the practical structure and support.</p>
+      </div>
+      <div class="testimonial-grid" id="testimonialList"></div>
+    </section>
+
+    <section class="section-enroll" id="enroll">
+      <div class="enroll-card">
+        <h2>Start your learning journey today</h2>
+        <p>Fill out the form and we’ll welcome you into the next available cohort.</p>
+        <form id="enrollForm">
+          <div class="form-grid">
+            <label>
+              Full name
+              <input type="text" id="studentName" placeholder="Jane Doe" required>
+            </label>
+            <label>
+              Email address
+              <input type="email" id="studentEmail" placeholder="jane@example.com" required>
+            </label>
+            <label>
+              Select course
+              <select id="courseSelect"></select>
+            </label>
+            <label>
+              Learning goals
+              <textarea id="studentGoal" placeholder="I want to improve my digital skills." rows="3"></textarea>
+            </label>
+          </div>
+          <div class="form-actions">
+            <button class="button button-primary" type="submit">Submit enrollment</button>
+            <p class="form-success" id="formSuccess"></p>
+          </div>
+        </form>
+      </div>
+      <div class="enroll-preview">
+        <div class="preview-card">
+          <h3>Selected course</h3>
+          <p id="selectedCourseName">Choose a course to preview its details and materials.</p>
+        </div>
+        <div class="preview-card preview-light">
+          <h3>How it works</h3>
+          <ul>
+            <li>1. Pick a course.</li>
+            <li>2. Register and enroll.</li>
+            <li>3. Start learning with resources online.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer page-footer">
+    <div>
+      <h3>Perfect Pace</h3>
+      <p>Professional online school platform with course management, enrollment, and resource delivery.</p>
+    </div>
+    <div class="footer-links">
+      <a href="courses.html">Courses</a>
+      <a href="about.html">About</a>
+      <a href="resources.html">Resources</a>
+      <a href="admin.html">Admin</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

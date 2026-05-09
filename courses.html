@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses — Perfect Pace Online School</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+  <header class="page-header page-header-light">
+    <div class="topbar">
+      <div class="brand"><a href="index.html">Perfect Pace</a></div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="courses.html" class="active">Courses</a>
+        <a href="about.html">About</a>
+        <a href="resources.html">Resources</a>
+        <a class="button button-secondary" href="admin.html">Admin</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+
+    <div class="page-hero">
+      <div>
+        <span class="eyebrow">Our course library</span>
+        <h1>Structured online learning for every career ambition.</h1>
+        <p>Explore our complete curriculum with career-forward tracks, expert mentors, and practical learning resources designed for fast progress.</p>
+        <a class="button button-primary" href="#courseFilters">Find your course</a>
+      </div>
+      <div class="hero-image-block">
+        <img src="images/ambience 2.jpg" alt="Students collaborating in online learning" loading="lazy">
+      </div>
+    </div>
+  </header>
+
+  <main class="page-content">
+    <section class="course-panel" id="courseFilters">
+      <div class="filter-card">
+        <h2>Explore courses</h2>
+        <p>Filter by category and skill level to find the right program for your next step.</p>
+        <div class="course-filter-grid">
+          <label>
+            Category
+            <select id="filterCategory">
+              <option value="all">All categories</option>
+            </select>
+          </label>
+          <label>
+            Level
+            <select id="filterLevel">
+              <option value="all">All levels</option>
+            </select>
+          </label>
+          <label>
+            Search
+            <input type="search" id="filterSearch" placeholder="Search course titles">
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-cards">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">Course Catalog</span>
+          <h2>Our complete course portfolio.</h2>
+        </div>
+        <p>Each program includes instructor-led support, curated materials, and a clear learning path.</p>
+      </div>
+      <div class="course-grid" id="coursesPageList"></div>
+    </section>
+
+    <section class="section-feature feature-cta">
+      <div class="feature-copy">
+        <span class="eyebrow">Designed for results</span>
+        <h2>Practical learning with career-ready outcomes.</h2>
+        <p>Our courses combine real work examples, guided projects, and direct feedback from professionals so students move from learning to doing.</p>
+      </div>
+      <div class="feature-panel">
+        <ul class="feature-list">
+          <li><strong>Certification-ready</strong> Courses include completion certificates to showcase your growth.</li>
+          <li><strong>Live coaching</strong> Join office hours, peer reviews, and mentorship sessions.</li>
+          <li><strong>Project-based</strong> Build a portfolio with instructor-reviewed assignments.</li>
+          <li><strong>Flexible pace</strong> Learn on your schedule with mobile-friendly lessons.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section-stats">
+      <div class="stats-grid">
+   <div class="stat-card">
+      <span>95%</span>
+      <h3>Completion Rate</h3>
+      <p>Students successfully complete their courses.</p>
+   </div>
+
+   <div class="stat-card">
+      <span>12k+</span>
+      <h3>Active Students</h3>
+      <p>Thousands learning every month.</p>
+   </div>
+
+   <div class="stat-card">
+      <span>50+</span>
+      <h3>Expert Tutors</h3>
+      <p>Industry professionals teaching live.</p>
+   </div>
+
+   <div class="stat-card">
+   <span>4.8</span>
+   <h3>Average Course Rating</h3>
+   <p>Highly rated by students across all programs.</p>
+</div>
+</div>
+    </section>
+  </main>
+
+  <footer class="site-footer page-footer">
+    <div>
+      <h3>Perfect Pace</h3>
+      <p>Professional online school platform with course management, enrollment, and resource delivery.</p>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="resources.html">Resources</a>
+      <a href="admin.html">Admin</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

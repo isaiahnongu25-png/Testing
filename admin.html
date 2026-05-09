@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard — Perfect Pace</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+  <header class="admin-header">
+    <div class="brand">Perfect Pace Admin</div>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="about.html">About</a>
+      <a href="resources.html">Resources</a>
+      <a class="button button-secondary" href="index.html">Visit site</a>
+    </nav>
+  </header>
+
+  <main class="admin-main" id="adminDashboard">
+    <section class="admin-grid">
+      <div class="admin-card">
+        <span id="metricCourses">0</span>
+        <p>Total courses</p>
+      </div>
+      <div class="admin-card">
+        <span id="metricStudents">0</span>
+        <p>Active students</p>
+      </div>
+      <div class="admin-card">
+        <span id="metricResources">0</span>
+        <p>Resource items</p>
+      </div>
+      <div class="admin-card">
+        <span id="metricInstructors">0</span>
+        <p>Instructors</p>
+      </div>
+    </section>
+
+    <section class="admin-section" id="courses">
+      <h2>Course catalog</h2>
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Category</th>
+            <th>Level</th>
+            <th>Instructor</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="courseTableBody"></tbody>
+      </table>
+    </section>
+
+    <section class="admin-section" id="manage">
+      <h2>Add a new course</h2>
+      <form id="addCourseForm" class="admin-form">
+        <label>
+          Course title
+          <input id="newCourseTitle" type="text" placeholder="E.g. Product Management" required>
+        </label>
+        <label>
+          Category
+          <input id="newCourseCategory" type="text" placeholder="E.g. Business" required>
+        </label>
+        <label>
+          Skill level
+          <select id="newCourseLevel">
+            <option>Beginner</option>
+            <option>Intermediate</option>
+            <option>Advanced</option>
+            <option>All Levels</option>
+          </select>
+        </label>
+        <label>
+          Duration
+          <input id="newCourseDuration" type="text" placeholder="E.g. 10 weeks" required>
+        </label>
+        <label>
+          Instructor
+          <input id="newCourseInstructor" type="text" placeholder="E.g. Dr. Adewale" required>
+        </label>
+        <button class="button button-primary" type="submit">Create course</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
